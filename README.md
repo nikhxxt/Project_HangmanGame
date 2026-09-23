@@ -1,56 +1,58 @@
 # 🌸 Hangman Game
 
-A simple and interactive **Hangman Game** built using **Python and Streamlit**.
-
-The player has to guess the name of a flower letter by letter. The game allows a maximum of **6 incorrect guesses**.
-
-## 🎮 Live Demo
-
-👉 **[Play the Hangman Game](https://projecthangmangame-sylofqdtmqvckr6orbkk7m.streamlit.app/)**
+A simple **flower-themed Hangman game** built with Python and Streamlit. Players guess a randomly selected flower name one letter at a time, with a maximum of 6 incorrect guesses.
 
 ## ✨ Features
 
-- 🌸 Flower-themed word guessing game
-- 🎯 Random word selection
-- 🔤 Letter-by-letter guessing
-- ❌ Maximum of 6 incorrect guesses
-- 🚫 Prevents repeated letter guesses
-- 🏆 Displays a winning message when the word is guessed
-- 😢 Displays the correct word when all tries are used
-- 🔄 New Game option
-- 🌐 Interactive Streamlit web interface
+* Random flower selection
+* Letter-by-letter guessing
+* Prevents repeated guesses
+* Maximum of 6 incorrect guesses
+* Win/loss detection
+* New Game option
+* Interactive Streamlit interface
 
-## 🛠️ Technologies Used
+## 🎮 How It Works
 
-- **Python**
-- **Streamlit**
-- **Random module**
+1. A flower is randomly selected from the predefined word list.
+2. The word is displayed as hidden letters.
+3. The player guesses one letter at a time.
+4. Correct letters are revealed.
+5. Incorrect guesses reduce the remaining attempts.
+6. The game ends when the word is guessed or 6 incorrect guesses are reached.
 
-## 🧠 How It Works
+### Available Words
 
-1. The game randomly selects a flower name from a predefined list.
-2. The selected word is initially displayed using underscores.
-3. The player enters one letter at a time.
-4. If the letter is present in the word, it is revealed.
-5. If the letter is incorrect, one try is lost.
-6. The player has a maximum of **6 incorrect guesses**.
-7. The game ends when the complete word is guessed or all 6 incorrect guesses are used.
+`Rose · Lily · Tulip · Daisy · Orchid`
 
-## 🌸 Available Words
+## 🛠️ Tech Stack
 
-The game currently uses the following flower names:
+**Python · Streamlit · Random**
 
-- Rose
-- Lily
-- Tulip
-- Daisy
-- Orchid
+## 🌐 Live Demo
 
-## 📂 Project Structure
+**Play:**
+https://projecthangmangame-sylofqdtmqvckr6orbkk7m.streamlit.app/
+
+## 🚀 Run Locally
+
+Install Streamlit:
+
+```bash
+pip install streamlit
+```
+
+Run the game:
+
+```bash
+streamlit run "hangman game.py"
+```
+
+## 📁 Project Structure
 
 ```text
 Hangman-Game/
-│
 ├── hangman game.py
-├── output with code.jpeg
 └── README.md
+```
+
